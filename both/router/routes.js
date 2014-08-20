@@ -10,14 +10,10 @@ Router.configure({
 });
 
 Router.map(function () {
-  /*
-    Example:
-      this.route('home', {path: '/'});
-  */
 
-  this.route('index', {
-  	path: '/'
-  });
+   this.route('index', {path: '/'});
 
-  this.route('index.index', {path: '/'});
+   this.route('createPost', {path: '/create-post'});
+
 });
+
