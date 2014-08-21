@@ -1,6 +1,19 @@
 <template name="footer">
-	<h1>In the footer, the current year is {{year}}</h1>
 
-	<h2> the passenger is: {{car}}</h2>
+	<h1>In the footer section, the current year is {{year}}</h1>
 
+	<h2> the number of passengers is: {{cruiseShip.passengers.length}}</h2>
+
+	<h2> the make of the vehicle is:  {{cruiseShip.make}}   </h2>
+
+	<h2> These are all the passengers: </h2>
+
+<!--     	<div>{{first_name}} {{last_name}}</div> -->
+	{{#each cruiseShip.passengers}}
+		<h4>This is passenger num:  </h4>
+		<p>First Name: {{first_name}}</p>
+		<p>Last Name: {{last_name}}</p>
+
+	{{/each}}
+		
 </template>
